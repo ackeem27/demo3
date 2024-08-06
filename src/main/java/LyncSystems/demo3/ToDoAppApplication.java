@@ -11,6 +11,8 @@ public class ToDoAppApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ToDoAppApplication.class, args);
+
+		System.out.println("I have taken over");
 	}
 
 	
