@@ -5,21 +5,18 @@
 </head>
 <body>
 <h1>Sign Up</h1>
-<form th:action="@{/}" th:object="${user}" method="post">
+<form th:action="@{/signup}" th:object="${user}" method="post">
     <div>
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username" required>
+        <label for="username">Username:</label>
+        <input type="text" id="username" th:field="*{username}" />
     </div>
     <div>
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" th:field="*{password}" />
     </div>
     <div>
         <button type="submit">Sign Up</button>
     </div>
 </form>
-<div th:if="${param.success}">
-    <p>Sign up successful!</p>
-</div>
 </body>
 </html>
