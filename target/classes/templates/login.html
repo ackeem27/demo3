@@ -18,11 +18,13 @@
         <button type="submit">Login</button>
     </div>
 </form>
+<a th:href="@{/signup}">SignUp</a>
 <div th:if="${error}">
     <p th:text="${error}">Invalid username or password</p>
 </div>
 <div th:if="${message}">
     <p th:text="${message}">Sign up successful. Please log in.</p>
 </div>
+
 </body>
 </html>
