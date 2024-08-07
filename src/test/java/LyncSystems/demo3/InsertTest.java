@@ -15,7 +15,7 @@ public class InsertTest {
 
    @Test
     public void insertUser(){
-       User user = new User();
+       UserData user = new UserData();
        user.setUsername("user1");
        String rawpassword = "userpassword";
        String encodedpassword = passwordEncoder.encode(rawpassword);
